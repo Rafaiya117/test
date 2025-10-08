@@ -43,7 +43,6 @@ class JobDetailScreen extends StatelessWidget {
                   icon: const Icon(Icons.send),
                   label: const Text('Apply'),
                   onPressed: () {
-                    // For mock app, "Apply" just saves and shows message
                     savedCtrl.add(job);
                     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Applied (mock)')));
                   },
